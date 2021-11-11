@@ -1,0 +1,45 @@
+.bg-green {
+    background: #449F76;
+    padding: 20px;
+}
+
+.bg-gray {
+    background: #7D7E81;
+    padding: 20px;
+}
+
+.datatable thead tr:first-child th {
+    color: #55565a;
+    font-size: 20px;
+}
+
+.datatable thead tr:last-child th {
+    background: #f1f1f1;
+    color: #444141;
+}
+
+.link {
+    color: #348358;
+    text-decoration: underline;
+}
+
+.link:hover {
+    text-decoration: none;
+}
+
+.datatable tbody td {
+    font-size: 20px;
+    padding: 10px 15px;
+}
+
+.datatable tbody td a.link {
+    font-size: 18px;
+}
+
+.dashboardtable .table1 {
+    flex: 63.5%
+}
+
+.dashboardtable .table2 {
+    flex: 26%
+}

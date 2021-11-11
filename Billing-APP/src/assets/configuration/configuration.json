@@ -1,0 +1,10 @@
+{
+    "angularVersion": "1",
+    "dateFormat": "DD/MM/YYYY",
+    "passwordAttempt": "5",
+    "timeFormat": "",
+    "refreshInterval": "100000",
+    "isCaptchaEnable": "true",
+    "isCacheEnable": "false"
+  }
+  

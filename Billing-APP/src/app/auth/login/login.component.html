@@ -1,0 +1,83 @@
+<div class="container-fluid page-bg">
+    <div class="text-center mt-lg-0">
+      <img class="img-fluid logo" src="../../.../../../assets/images/Hembaj.png" />
+    </div>
+    
+    <div class="row justify-content-center mt-lg-0 mt-4">
+      <div class="
+          col-md-8 col-lg-6 col-xl-4 col-11 login-border hidden-xs-down mt-xl-5 mt-3 mb-4 shadow-lg">
+  
+        <div class="row">
+          <div class="col-lg-12 card-left-side">
+            <h2 class="mb-4 text-center">{{ "systemtype" | translate }}</h2>
+  
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+              <!-- <label class="form-label f21">{{
+                "username" | translate
+                }}</label> -->
+              <div class="input-group" style="background-color: #EEF2F5;">
+                <span class="login-icon text-center">
+                  <img src="../../.../../../assets/images/login_icon.svg" />
+                </span>
+                <input type="text" class="form-control" placeholder="Username" formControlName="username"
+                  [ngClass]="{ 'is-invalid': submitted && f.username.errors }" />
+              </div>
+              <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+                <div *ngIf="f.username.errors.required">
+                  {{ "usernameRequire" | translate }}
+                </div>
+              </div>
+              <!-- <label class="form-label f21 pt-md-3 pt-3">{{
+                "password" | translate
+                }}</label> -->
+              <div class="input-group" style="background: #fff;">
+                <span class="login-icon text-center">
+                  <img src="../../../assets/images/pass_icon.svg" />
+                </span>
+                <!-- <i class="fa fa-lock txt-white f24" aria-hidden="true"></i> -->
+                <input type="password" placeholder="Password" class="form-control" formControlName="password"
+                  [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+              </div>
+              <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                <div *ngIf="f.password.errors.required">
+                  {{ "passwordRequire" | translate }}
+                </div>
+              </div>
+              <div class="login-captcha-wrapper" *ngIf="isCaptchaEnable">
+                <div class="capbox mt-3">
+                  <div id="CaptchaDiv">{{ captchaText }}</div>
+                  <span class="refreshicon mx-1" (click)="refreshCaptcha()">
+                    <i class="fa fa-refresh f20 txt-green" aria-hidden="true"></i>
+                  </span>
+  
+                  <div class="capbox-inner ml-xl-4">
+                    <input type="text" placeholder="password" autocomplete="off" name="CaptchaInput"
+                      placeholder="{{ 'Code' | translate }}" class="rounded f14" id="CaptchaInput" size="15"
+                      formControlName="recaptcha" />&nbsp;
+                  </div>
+                </div>
+                <div *ngIf="submitted && f.recaptcha.errors" class="invalid-feedback">
+                  <div *ngIf="f.recaptcha.errors.required">
+                    {{ "captchaIsRequired" | translate }}
+                  </div>
+                  <div *ngIf="f.recaptcha.errors.inValidExt">
+                    {{ "invalidCaptcha" | translate }}
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex  mt-3">
+                <button class="secondary-button pl-3 pr-3 mx-2 rounded f18">
+                  {{ "signIn" | translate }}
+                </button>
+                <a routerLink="/register" class="btn btn-link">Register</a>
+                <!-- <a href="javascript:void()" class="forgot-password f21">{{
+                  "forgotPassword" | translate
+                }}</a> -->
+              </div>
+            </form>
+          </div>
+       
+        </div>
+      </div>
+    </div>
+  </div>

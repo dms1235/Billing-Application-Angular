@@ -1,0 +1,15 @@
+<footer class="footer mt-auto py-3">
+    <div
+      class="container text-center d-flex flex-column flex-md-row justify-content-around"
+    >
+      <span class="text-muted">{{ "All rights reserved to Hembaj 2020"  }}</span>
+      <p class="version-text text-muted f17" *ngIf="isLoggedIn">
+        {{ "Angular Version"}} - {{ angularVersion }} |
+        {{ "API Version"}} - {{ apiVersion }} |
+        <span *ngIf="!isProduction"
+          >{{ "Environment" }} - {{ env }}</span
+        >
+      </p>
+    </div>
+  </footer>
+  

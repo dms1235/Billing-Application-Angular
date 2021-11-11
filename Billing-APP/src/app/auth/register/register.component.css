@@ -1,0 +1,277 @@
+::ng-deep .f24 {
+    font-size: 24px;
+}
+/* .login-captcha-wrapper {
+margin-top: 25px;
+} */
+
+h2 {
+    font-family: "Tajawal", sans-serif;
+    font-weight: 400;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    background-color: transparent !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.card-img-right {
+    background-image: url("./../../../assets/images/main-news-homepage.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-color: #2b835b;
+}
+
+@media (min-width: 320px) {
+     ::ng-deep .card-img-right {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .card-img-right {
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+     ::ng-deep [dir="rtl"] .card-img-right {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+
+body {
+    background-image: url("./../../../assets/images/10436-NMJ3BL.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.login {
+    text-align: center;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.najm-logo {
+    padding: 5% 10%;
+}
+
+ ::ng-deep [dir="rtl"] .najm-logo {
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.fa-user-o {
+    color: white;
+    font-size: 25px;
+    margin-top: 8px;
+}
+
+.fa-lock {
+    color: white;
+    font-size: 25px;
+    margin-top: 8px;
+}
+
+.form-control {
+    border: 0px;
+}
+
+.logo {
+    max-width: 80px
+}
+
+@media (min-width:1200px) {
+    .logo {
+        max-width: 92px
+    }
+}
+
+@media (min-width:1400px) {
+    .logo {
+        max-width: 100px
+    }
+}
+
+@media (max-width:1400px) {
+    .login-logo {
+        margin-top: -60px !important;
+    }
+}
+
+.bg-gray {
+    background-color: #656669;
+    padding: 5px 10px;
+    text-align: center;
+    margin: -1px;
+}
+
+.form-label {
+    color: #55565a;
+}
+
+.forgot-password {
+    font-size: 17px;
+    color: #55565a;
+    padding: 10px;
+}
+
+.forgot-password:hover {
+    color: #2b835b;
+}
+
+.right-lang-box {
+    top: 30px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 99;
+}
+
+ ::ng-deep [dir="ltr"] .right-lang-box {
+    right: 30px;
+}
+
+ ::ng-deep [dir="rtl"] .right-lang-box {
+    left: 30px;
+}
+
+.gray-box-lang {
+    background: #34835a;
+    padding: 15px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.login-logo img {
+    margin-left: 80px;
+}
+/* COMPACT CAPTCHA */
+
+.capbox {
+    /* background-color: #BBBBBB;
+background-image: linear-gradient(#BBBBBB, hsl(0, 0%, 62%));
+border: #2A7D05 0px solid; */
+    border-width: 2px 2px 2px 20px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    display: inline-block;
+    /* padding: 5px 8px 5px 8px; */
+    border-radius: 4px 4px 4px 4px;
+}
+
+.caplabel {
+    min-width: 105px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.capbox-inner {
+    font: bold 18px arial, sans-serif;
+    color: #adc2d3;
+    margin: 0px auto 0px auto;
+    padding: 3px 0 5px 0;
+    border-radius: 4px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#CaptchaDiv {
+    color: #3d3d3e;
+    font: normal 25px Impact, Charcoal, arial, sans-serif;
+    /* font-style: italic; */
+    text-align: center;
+    vertical-align: middle;
+    /* background-color: #FFFFFF; */
+    user-select: none;
+    display: inline-block;
+    margin-right: 4px;
+    border-radius: 4px;
+}
+
+ ::ng-deep [dir="ltr"] #CaptchaDiv {
+    padding: 5px 10px 10px 0;
+}
+
+ ::ng-deep [dir="rtl"] #CaptchaDiv {
+    padding: 5px 0 10px 10px;
+}
+
+#CaptchaInput {
+    /* border: #348358 2px solid; */
+    margin: 3px 0px 1px 0px;
+    width: 155px;
+    padding: 8px 10px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    border: 1px solid #cddbe6;
+}
+
+.refreshicon {
+    top: 2px;
+    position: relative;
+}
+
+.secondary-button {
+    background-color: blue;
+    color: #fff !important;
+    text-align: center;
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+
+.secondary-button:hover {
+    background-color: yellow;
+}
+
+.input-group {
+    border: none;
+    border-radius: 0;
+    border-radius: 0;
+}
+
+.input-group input {
+    background: transparent;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.login-icon {
+    min-width: 50px;
+    margin-top: 10px;
+}
+
+.card-left-side {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.card-left-side {
+    padding: 20px 30px;
+}
+
+@media (min-width:1200px) {
+    .card-left-side {
+        padding: 60px 100px;
+    }
+}

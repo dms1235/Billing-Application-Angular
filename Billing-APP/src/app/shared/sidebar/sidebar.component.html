@@ -1,0 +1,93 @@
+<div
+  id="mySidebar"
+  class="sidebar d-flex flex-column h-100"
+  [style.width.px]="400"
+  *ngIf="isMenuOpen"
+  [ngClass]="isMenuOpen ? 'isOpen' : ''"
+>
+  <div class="username d-flex flex-column justify-content-center" >
+    <img
+      [src]="userprofilePath"
+      width="80"
+      class="ms-auto me-auto"
+      alt="user"
+    />
+    <p class="text-center f20 pt-3 pb-2">{{ username }}</p>
+  </div>
+  <div class="sep-white w-75 ms-auto me-auto mb-4"></div>
+  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">×</a>
+  <nav class="sidenav">
+    <ul
+      nz-menu
+      nzMode="inline"
+      nzTheme="dark"
+      [nzInlineCollapsed]="isCollapsed"
+    >
+    <li
+    nz-menu-item
+    nz-tooltip
+    nzTooltipPlacement="right"
+    [nzTooltipTitle]="isCollapsed ? 'Navigation One' : ''"
+    routerLink="/dashboard"
+    (click)="toggleMenu($event)"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+  >
+    <i nz-icon nzType="home" nzTheme="outline"></i>
+    <span>{{ "home" | translate }}</span>
+  </li>
+
+      <li
+        nz-submenu
+        nzTitle="Masters"
+        nzIcon="bars"
+        
+      >
+      <ul style="padding-left:48px;">
+        <li
+          nz-menu-item
+          routerLink="/dashboard"
+          (click)="toggleMenu($event)"
+          *ngIf="isVisibleMenu('CreatePolicy')"
+          routerLinkActive="active"
+        >
+          <i nz-icon nzType="right" nzTheme="outline"></i>
+          <span class="syteam-table-menu" style="padding-left:15px;"> Item</span>
+        </li>
+        <li
+          nz-menu-item
+          routerLink="/dashboard/search-policy"
+          (click)="toggleMenu($event)"
+          *ngIf="isVisibleMenu('SearchPolicy')"
+          routerLinkActive="active"
+        >
+          <i nz-icon nzType="right" nzTheme="outline"></i>
+          <span class="syteam-table-menu"  style="padding-left:15px;">  Company</span>
+        </li>
+       
+      </ul>
+      </li>
+      
+      <li nz-menu-item nzIcon="setting">
+        <i nz-icon nzType="login" nzTheme="outline"></i>
+        <span (click)="onLogout()">LogOut</span>
+      </li>
+    </ul>
+  </nav>
+  <div
+    class="app-version-wrapper mt-auto d-flex flex-row justify-content-center pt-3 pb-3"
+  >
+    <p class="mb-0">
+      Angular Version - {{ angularVersion }}
+    </p>
+    <p class="ms-2 me-2 mb-0">|</p>
+    <p class="mb-0">API Version - {{ appVersion }}</p>
+  </div>
+</div>
+
+<div id="main" class="main-nav">
+  <div class="openbtn" #toggleButton (click)="toggleMenu($event)">
+    <i class="fa fa-bars f30" aria-hidden="true"></i>
+  </div>
+</div>
+>

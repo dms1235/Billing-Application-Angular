@@ -1,0 +1,42 @@
+<div class="container-fluid mb-2" id="headerid" *ngIf="isHeaderVisible">
+    <div>
+        <div class="d-flex flex-md-row flex-column head-section">
+            <div class="
+          d-inline-flex
+          justify-content-md-start justify-content-center
+          header-logo
+        ">
+                <img class="img-fluid najmlogo" src="../../../assets/images/Hembaj.png" />
+            </div>
+            <div class="flex-fill footer">
+                <div class="right-lang-box d-flex justify-content-end mt-3">
+                  
+
+                    <a href="javascript:void(0)" class="gray-box-search d-inline-flex rounded logout-bt" (click)="onLogout()">
+                        <i class="fa fa-sign-out align-self-center f18" aria-hidden="true"></i>
+                        <span class="d-none d-md-block">{{ "logout"  }}</span>
+                    </a>
+                </div>
+                <div class="title-section">
+
+                    <h1 class="page-title mb-md-0 mb-0">
+                        {{ title }}
+                    </h1>
+
+                    <nav aria-label="breadcrumb" class="breadcrumb-box">
+                        <ol class="breadcrumb breadcrumb-list px-0 py-0">
+                            <li class="breadcrumb-item">
+                                <a routerLink="/dashboard">{{
+                  "home" 
+                  }}</a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a>{{ title }}</a>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

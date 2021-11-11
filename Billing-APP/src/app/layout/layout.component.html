@@ -1,0 +1,10 @@
+<div class="w6 fix-sidebar">
+    <app-sidebar [sidebarOpen]="isSidebarMenuOpen"></app-sidebar>
+  </div>
+  <app-header></app-header>
+  <p>test</p>
+  <section class="main-content-wrapper" (click)="toggleMenu($event)">
+    <router-outlet></router-outlet>
+  </section>
+ 
+  

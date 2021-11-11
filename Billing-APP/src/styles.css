@@ -1,0 +1,1251 @@
+/* You can add global styles to this file, and also import other style files */
+ 
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:  sans-serif;
+  /* padding-left: 120px;
+  padding-right: 20px; */
+}
+
+html body.swal2-height-auto {
+  height: 100% !important;
+}
+
+/* width */
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #348358;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/*checkbox*/
+
+.radio-inline {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+
+.radio-inline input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #e2e2e2;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+
+.radio-inline:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+
+.radio-inline input:checked ~ .checkmark {
+  background-color: #348358;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+
+.radio-inline input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+
+.radio-inline .checkmark::after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+@media (min-width: 768px) {
+  .login-body {
+    padding-left: 120px;
+    padding-right: 20px;
+  }
+}
+
+.border-2-gray {
+  border: 2px gray solid !important;
+}
+
+/*logo css*/
+
+@media (max-width: 767px) {
+  /* .najmlogo {
+        width: 75px;
+        height: 118px;
+    } */
+  .manafethlogo {
+    width: 120px;
+    height: 110px;
+  }
+}
+
+.txt-white {
+  color: #fff;
+}
+
+.txt-green {
+  color: #348358 !important;
+}
+
+.f14 {
+  font-size: 14px !important;
+}
+
+.f15 {
+  font-size: 15px !important;
+}
+
+.f16 {
+  font-size: 16px !important;
+}
+
+.f17 {
+  font-size: 17px !important;
+}
+
+.f18 {
+  font-size: 18px !important;
+}
+
+.f19 {
+  font-size: 19px !important;
+}
+
+.f20 {
+  font-size: 20px !important;
+}
+
+.f21 {
+  font-size: 21px !important;
+}
+
+.f22 {
+  font-size: 22px !important;
+}
+
+.f24 {
+  font-size: 24px !important;
+}
+
+.f26 {
+  font-size: 26px !important;
+}
+
+.f28 {
+  font-size: 28px !important;
+}
+
+.f30 {
+  font-size: 30px !important;
+}
+
+.f32 {
+  font-size: 30px !important;
+}
+
+.f34 {
+  font-size: 34px !important;
+}
+
+/*LOGO CSS*/
+
+body {
+
+  background-color: #f5f5f5;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.login-body .header-logo {
+  max-width: 100px;
+  top: -25px;
+  position: relative;
+}
+.fix-sidebar{
+  left: 0;
+}
+.fix-sidebar {
+  width: 110px;
+  position: fixed;
+  z-index: 1000;
+}
+
+
+
+@media (max-width: 767px) {
+  .fix-sidebar {
+    position: absolute;
+  }
+}
+
+.vertical-centerM {
+  min-height: calc(100vh - 100px);
+  display: flex;
+  align-items: center;
+}
+
+.login-border {
+  /* border: 1px solid #b5b5b5 !important; */
+  background: #f9fafc;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 650px !important;
+}
+
+.border {
+  border: 1px solid #707070 !important;
+  border-radius: 20px;
+}
+
+.sep-white {
+  border: 1px solid #fff;
+  background: #fff;
+}
+
+/*buttons*/
+
+.secondary-bt {
+  background: #55565a;
+  color: #fff;
+  outline: none;
+  font-size: 18px;
+  height: 46px;
+  border: none;
+}
+
+.primary-btn {
+  line-height: 25px;
+  font-size: 21px;
+  height: 46px;
+  background: #32835b;
+  border: 1px solid #32835b;
+  color: #fff;
+  font-size: 21px;
+  text-transform: capitalize;
+}
+
+.inlinebt {
+  font-size: 20px !important;
+  line-height: 40px;
+}
+
+.primary-btn:hover {
+  background: #2a734f;
+}
+
+.swal2-styled.swal2-confirm {
+  background-color: #348358 !important;
+}
+
+/*Search bar*/
+
+.search-field input {
+  font-size: 14px;
+  max-height: 46px;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-field input {
+  border-radius: 0 5px 5px 0;
+}
+
+@media (min-width: 769px) {
+  .search-field input {
+    min-width: 255px;
+    font-size: 16px;
+  }
+}
+
+.input-field {
+  border: 1px solid #707070;
+}
+
+/*page Title*/
+
+.page-title {
+  font-weight: 700;
+  color: #55565a;
+  position: relative;
+  text-transform: capitalize;
+}
+
+.body-section .page-title {
+  display: none;
+}
+
+@media (min-width: 320px) {
+  .page-title {
+    font-size: 20px;
+    /* padding-bottom: 10px; */
+  }
+}
+
+@media (min-width: 768px) {
+  .page-title {
+    font-size: 24px;
+  }
+   .title-section {
+    margin-left: 110px;
+     
+  }
+  
+    .head-section .footer {
+    padding-left: 25px;
+    background: #fff;
+  }
+   
+}
+
+@media (min-width: 1200px) {
+  .page-title {
+    font-size: 30px;
+    line-height: 40px;
+    padding-bottom: 5px;
+  }
+}
+
+.page-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 65px;
+  height: 3px;
+  /* background: #348358; */
+}
+ 
+
+/*header*/
+
+.gray-box-lang {
+  background: #55565a;
+  padding: 10px 15px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.gray-box-search {
+  background: #55565a;
+  padding: 10px 15px;
+  color: #fff !important;
+  cursor: pointer;
+}
+
+.gray-box-search:hover,
+.gray-box-lang:hover {
+  color: #fff;
+  background: #47484c;
+  text-decoration: none;
+}
+
+  .logout-bt {
+  margin-right: 5px;
+}
+ 
+
+ .logout-bt span {
+  margin-left: 5px;
+}
+ 
+
+/*Breadcrumb*/
+
+.breadcrumb-list {
+  /* border-top: 1px solid #55565a;
+        border-bottom: 1px solid #55565a; */
+  background-color: #fff;
+  border-radius: 0px;
+  margin-bottom: 0px;
+  font-size: 20px;
+  padding: 0;
+}
+ 
+
+.breadcrumb a {
+  color: #55565a;
+}
+
+.breadcrumb-item {
+  text-transform: capitalize;
+}
+
+.breadcrumb-item.active {
+  color: #2c845c;
+}
+
+.breadcrumb-item a:hover {
+  color: #348358;
+}
+
+.input-group {
+  border: 2px gray solid;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/*newcss*/
+
+/* .form-control {
+  min-height: 48px;
+  border: none;
+  font-size: 18px;
+} */
+
+/* select.form-control {
+  min-height: 52px;
+  font-size: 18px;
+} */
+
+/* Font Weight */
+
+.font-weight-100 {
+  font-weight: 100 !important;
+}
+
+.font-weight-200 {
+  font-weight: 200 !important;
+}
+
+.font-weight-300 {
+  font-weight: 300 !important;
+}
+
+.font-weight-400 {
+  font-weight: 400 !important;
+}
+
+.font-weight-500 {
+  font-weight: 500 !important;
+}
+
+.font-weight-600 {
+  font-weight: 600 !important;
+}
+
+.font-weight-700 {
+  font-weight: 700 !important;
+}
+
+.font-weight-800 {
+  font-weight: 800 !important;
+}
+
+.font-weight-900 {
+  font-weight: 900 !important;
+}
+
+.bg-gray {
+  background-color: #656669;
+  padding: 10px 15px;
+  min-width: 50px;
+  text-align: center;
+  margin-left: -1px;
+  margin-top: -1px;
+  margin-bottom: -1px;
+}
+
+.btn-primary {
+  background: #32835b !important;
+  border: 1px solid #32835b !important;
+  color: #fff !important;
+  font-size: 20px !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background: #246b48;
+  border: 1px solid #246b48;
+  box-shadow: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #246b48;
+  border-color: #246b48;
+}
+
+button.disable,
+button.enable {
+  background: #fff;
+  font-size: 20px;
+  color: #55565a;
+  padding: 5px 15px;
+  font-weight: 300;
+}
+
+button.disable img,
+button.enable img {
+  width: 18px;
+  margin-left: 5px;
+  margin-right: 2px;
+}
+
+.modal-content {
+  border: 1px solid #707070;
+}
+
+.gray-box-lang:hover {
+  background: #404144;
+  color: #fff;
+}
+
+.secondary-button {
+  background-color: #656669;
+  color: #fff !important;
+  text-align: center;
+  padding: 10px;
+  outline: none;
+  border: none;
+}
+
+.secondary-button:hover {
+  background-color: #525356;
+}
+
+/*Sidebar*/
+
+#main {
+  transition: margin-left 0.5s;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #55565a;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+@media (max-width: 767px) {
+  .sidebar {
+    width: 350px !important;
+  }
+}
+
+ 
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px !important;
+  margin-left: 50px;
+  top: 15px;
+}
+
+ 
+
+@media (max-width: 767px) {
+  .login-body .header-logo {
+    max-width: 70px;
+    top: -25px;
+    position: relative;
+  }
+  .openbtn {
+    position: relative;
+  }
+  .openbtn {
+    color: #53565a;
+    margin-top: 20px;
+    left: 140px;
+  }
+   
+}
+
+@media (min-width: 768px) {
+  .openbtn {
+    font-size: 42px;
+    cursor: pointer;
+    background-color: #55565a;
+    color: white;
+    padding: 40px 10px;
+    border: none;
+    width: 94px;
+    height: 100vh;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    top:0;
+  }
+}
+
+/*Table CSS*/
+
+#system-lookup-table {
+  margin-top: 20px;
+}
+
+#system-lookup-table .table {
+  width: 100%;
+  overflow: auto;
+}
+
+#system-lookup-table thead,
+.lookup-table thead {
+  background: #55565a;
+  color: #fff;
+  cursor: pointer;
+}
+
+#system-lookup-table thead th {
+  padding: 7px 10px;
+  vertical-align: middle;
+}
+
+#system-lookup-table th,
+#system-lookup-table tbody td {
+  text-align: center;
+}
+
+#system-lookup-table tbody td {
+  padding: 7px 10px;
+  font-size: 16px;
+}
+
+#system-lookup-table thead th {
+  font-weight: 400;
+  font-size: 16px !important;
+  text-transform: capitalize;
+}
+
+#system-lookup-table table {
+  border-collapse: collapse;
+}
+
+#system-lookup-table table tbody td {
+  border: 1px solid #bbbbbb !important;
+}
+
+#system-lookup-table table thead th:first-child {
+  border-left: 1px solid #55565a !important;
+}
+
+#system-lookup-table table thead th {
+  border-top: 1px solid #55565a !important;
+}
+
+#system-lookup-table table thead th:last-child {
+  border-right: 1px solid #55565a !important;
+}
+ 
+
+#system-lookup-table table tbody td {
+  border: 1px solid #bbbbbb !important;
+}
+
+#system-lookup-table tbody tr:nth-child(even) {
+  background: #fff;
+}
+
+#system-lookup-table tbody tr:nth-child(odd) {
+  background: #ececec;
+}
+
+#system-lookup-table tbody tr td img {
+  margin-right: 5px;
+  width: 20px;
+}
+
+#system-lookup-table tbody tr td.edit a {
+  color: #5087a7 !important;
+  font-weight: 600;
+}
+
+#system-lookup-table tbody tr td.edit a i {
+  position: relative;
+  top: 2px;
+}
+
+#system-lookup-table tbody tr td.edit a:hover {
+  cursor: pointer;
+}
+
+/*Footer CSS*/
+
+footer {
+  border-top: 1px solid #acacac;
+}
+
+footer span {
+  font-size: 17px;
+}
+
+/*Toggle Switch*/
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.top-n-7 {
+  top: -7px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #6e6e6e;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #fff;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #348358;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 0 4px rgba(21, 156, 228, 0.7);
+  outline: none;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*Toggle switch end here*/
+
+/*Popup css*/
+
+.lookup-modal-form {
+  min-height: 100px;
+}
+
+.modal-content {
+  border: 1px solid #707070;
+  border-radius: 15px;
+}
+
+@media (min-width: 768px) {
+  /* .modal-content {
+    margin-left: 15px;
+    margin-right: 15px;
+  } */
+}
+
+.modal-title {
+  font-size: 24px;
+  color: #55565a;
+  font-weight: 700;
+}
+
+.modal-header .close:focus {
+  outline: none;
+}
+
+ 
+
+ .modal-header .close {
+  right: 30px;
+}
+
+.ltr {
+  direction: ltr !important;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+
+.username p {
+  color: #fff;
+}
+
+.modal-dialog {
+  max-width: 800px !important;
+}
+
+/*pagination*/
+
+pagination-controls .ngx-pagination .current {
+  background: #348358;
+}
+
+.loader {
+  left: 50%;
+  right: auto;
+  width: 50px !important;
+}
+
+tbody tr td img.spinner {
+  width: 50px !important;
+}
+
+.table-no-data-found-wrapper {
+  border-bottom: 1px solid;
+  padding-bottom: 15px;
+  border-color: #ddd;
+  margin-bottom: 15px;
+}
+
+.invalid-feedback {
+  display: block !important;
+}
+
+.th-sort-icon {
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">" !important;
+  color: #2c845c;
+  font-weight: bold;
+}
+
+.loading-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-menu {
+  padding: 0px 8px;
+  top: 8px;
+  position: absolute;
+}
+
+.syteam-table-menu {
+  position: absolute;
+  padding: 2px 5px;
+}
+
+.fa-caret-up,
+.fa-caret-down {
+  margin-left: 5px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.lookup-table thead th {
+  cursor: pointer;
+}
+
+th.active .sort-asc::after {
+  font-family: FontAwesome;
+  content: "\f0d8";
+  display: inline-block;
+  margin-left: 5px;
+  vertical-align: middle;
+  font-size: 13px;
+}
+
+th.active .sort-desc::after {
+  font-family: FontAwesome;
+  content: "\f0dd";
+  display: inline-block;
+  margin-left: 5px;
+  vertical-align: middle;
+  font-size: 13px;
+}
+
+/* .lookup-table .fa-sort {
+  font-size: 12px !important;
+  color: #fff;
+  margin-left: 5px;
+} */
+
+/*************** Online Application CSS ******************/
+
+.online-app-form-wrapper .btn-primary {
+  background: #32835b;
+  border: 1px solid #32835b;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 0;
+  padding: 5px 20px !important;
+}
+
+.online-app-form-wrapper label,
+.online-app-form-wrapper .form-control {
+  font-size: 17px;
+}
+
+.online-app-form-wrapper .form-control {
+  border: solid 1px #878787;
+  border-top-left-radius: unset;
+  border-bottom-left-radius: unset;
+  border-left: 3px Solid #2c845c;
+}
+ 
+
+.online-app-form-wrapper select {
+  background: linear-gradient(45deg, transparent 50%, #4b4b4b 50%),
+    linear-gradient(135deg, #4b4b4b 50%, transparent 50%),
+    linear-gradient(to right, #ffffff00, #ffffff00);
+  background-position: calc(100% - 21px) calc(1em + 2px),
+    calc(100% - 16px) calc(1em + 2px), 100% 0;
+  background-size: 5px 5px, 5px 5px, 2.5em 2.5em;
+  background-repeat: no-repeat;
+  border: thin solid #4b4b4b;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+  border-radius: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+ 
+
+.event-none {
+  pointer-events: none;
+}
+
+.swal2-content {
+  font-weight: 700 !important;
+}
+
+/* ::ng-deep #swal2-content {
+  font-weight: 700 !important;
+}
+::ng-deep .swal2-html-container {
+  font-weight: 700 !important;
+} */
+
+@media print {
+  @page {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .lookup-table thead th {
+    background-color: #55565a;
+    -webkit-print-color-adjust: exact;
+  }
+  ::ng-deep #system-lookup-table thead th,
+  ::ng-deep .lookup-table thead th {
+    background: #55565a;
+    -webkit-print-color-adjust: exact;
+  }
+}
+
+.page-break {
+  page-break-after: always !important;
+}
+
+@media print {
+  .login-body {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  #mySidebar,
+    #main,
+    /* #headerid, */
+    .footer,
+    .print-hidden {
+    display: none !important;
+  }
+  .anchorLinkCss {
+    color: gray !important;
+    text-decoration: none;
+    background-color: transparent;
+  }
+}
+
+/* Datepicker color change */
+
+.bs-datepicker-body table td.week span {
+  color: #32835b !important;
+}
+
+.bs-datepicker-body table td span.selected,
+.bs-datepicker-head,
+.bs-datepicker-head,
+.bs-datepicker button:active,
+.bs-datepicker-body table td.selected span,
+.bs-datepicker-body table td span[class*="select-"]:after,
+.bs-datepicker-body table td[class*="select-"] span:after,
+.bs-datepicker-body table td.active-week span:hover {
+  background-color: #32835b !important;
+}
+
+.ng-select-container {
+  border: solid 1px #878787 !important;
+  border-top-left-radius: unset !important;
+  border-bottom-left-radius: unset !important;
+  border-left: 3px Solid #2c845c !important;
+  height: calc(1.5em + 0.75rem + 2px) !important;
+}
+
+.ng-select.ng-select-single .ng-select-container {
+  height: 46px !important;
+}
+
+#lookup-form-modal .form-control {
+  /* min-height: 48px; */
+  display: flex;
+  border: none;
+  font-size: 18px;
+}
+
+#lookup-form-modal select.form-control {
+  min-height: 52px;
+  font-size: 18px;
+}
+
+#lookup-form-modal .close {
+  font-size: 34px;
+}
+
+#lookup-form-modal .ng-select-container {
+  height: calc(1.5em + 0.75rem + 2px) !important;
+  padding: 0.375rem 0.75rem !important;
+  border: 2px gray solid !important;
+  border-radius: 5px !important;
+  min-height: 48px;
+}
+
+#lookup-form-modal .ng-value-container {
+  font-size: 18px;
+}
+
+.form-control {
+  min-height: 48px;
+  border: none;
+}
+
+.required-label {
+  margin-left: 5px;
+}
+
+.lookup-search-error {
+  color: red;
+  font-size: 80%;
+}
+
+.anchorLinkCss {
+  color: #348358;
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+.anchorLinkCss:hover {
+  text-decoration: none;
+}
+ 
+
+.active {
+  background: none;
+  color: #e6c068 !important;
+}
+
+.swal2-styled.swal2-deny {
+  background-color: #53565a !important;
+}
+
+@media (min-width: 1200px) {
+  .scroll-table {
+    border-collapse: collapse;
+  }
+  .scroll-table tbody {
+    display: block;
+    overflow: auto;
+  }
+  .height500 {
+    max-height: 500px;
+  }
+  .scroll-table thead,
+  .scroll-table tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+  /* .scroll-table thead {
+            width: calc( 100% - 6px)
+        } */
+}
+
+/* drop down hover changes as suggested by hamzah */
+
+.ng-dropdown-panel .ng-dropdown-panel-items .ng-option.ng-option-marked {
+  background-color: #2b835b;
+  color: white;
+}
+
+.border-wrapper {
+  border: 1px solid #acacac;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .border-wrapper {
+    min-width: 475px;
+  }
+}
+
+ .datepicker i {
+  right: 10px;
+  top: 10px;
+  z-index: -1;
+}
+ 
+
+.datepicker input,
+.datepicker input:focus {
+  background: transparent !important;
+}
+
+.datepicker input:hover {
+  cursor: pointer;
+}
+
+.datepicker-select-only[readonly] {
+  background-color: transparent;
+}
+
+.anchor-link {
+  color: #348358;
+  text-decoration: underline;
+}
+
+.anchor-link:hover {
+  color: #348358;
+  text-decoration: none;
+}
+
+.ng-select.ng-select-disabled > .ng-select-container {
+  background-color: #e9ecef !important;
+  opacity: 1;
+}
+
+table tbody i {
+  color: blue;
+}
+
+.txt-gray {
+  color: #55565a !important;
+}
+
+@media (min-width: 1200px) {
+  .modal-xl {
+    max-width: 1140px !important;
+  }
+  .modal-lg {
+    max-width: 980px !important;
+  }
+}
